@@ -3,17 +3,21 @@ body
     background-image: url(quicksilver.png);
 }
 
+img
+{
+    display: block;
+}
+
 .masthead
 {
     margin: auto;
     margin-top: 15px;
-    width: min-content;
+    max-width: 90%;
     border: 2px solid #6717a6;
     border-radius: 10px;
     padding: 5px;
     background-color: #f4f4f4;
 }
-
 
 .menu
 {
@@ -43,18 +47,7 @@ body
     color: #f4f4f4; 
 }
 
-p
-{
-    margin: auto;
-    margin-top: 10px;
-    max-width: 700px;
-    border: 2px solid #6717a6;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #f4f4f4;
-}
-
-.blog-post
+.content
 {
     margin: auto;
     margin-top: 10px;
