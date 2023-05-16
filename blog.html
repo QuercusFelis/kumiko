@@ -20,7 +20,78 @@
 <div class=content>
 <table>
     <tr>
-        <td class="title">Introduction: Importing!</td>
+        <td class="title"><img src="rainbow-pawprint.gif">2 years later...</td>
+        <td class="date">4.15.2023</td>
+    </tr>
+    <tr>
+        <td colspan=2>
+            <hr>
+            It's been a while since my last post, so here's some updates.
+            Since my last post, I've tested all the PC-98 games I own, and to my disappointment, only a few seem to actually run.
+            This is after painstakingly taking each disk and gently cleaning off any mold that had accumulated over the years with a cotton swab.
+            I also haven't gotten much chance to play any of the games since, as you might expect, they're all in Japanese, and there's only so much google translate can do.
+            In the meantime, inbetween a lot of other life events, I've made some attempts at learning japanese to remedy this.
+            As one might expect though, that has been no mean feat and I don't yet have much to show for my efforts.
+            I'll be continuing with that at some point, and in the meantime I hope no to just be letting the PC-98s collect dust.
+            <br><br>
+            The next order of business concerning those computers will be to acquire a new OSSC, as the last one seems to have died during my move to a new apartment, and installing a floppy drive emulator based on flash storage, or something else to store games and software more reliably.
+            At that point I would archive what games I do have, but I believe this work has already been done <a href="https://archive.org/details/NeoKobe-NecPc-98012017-11-17">here</a>.
+            In addition to the PC-98s, I've also recently acquired a NABU.
+            Haven't done much for it yet aside from wiring up the serial interface, but I hope to maybe try writing some software for that and experiment with trying to run MSX games on it since it seems to be based on that standard.
+            <br><br>
+            As for the website and blog, now that I'm out of school I think I'll find more to do here.
+            I've realized I need some kind of creative outlet before I go completely insane, and this seems as good a place for that as any, if not better.
+            I'm still working out what exactly that entails, but some ideas are to use this as a place to post other art, to just fuck around with the site's code, to post essays on whatever I'm hyper fixating on, or to post creative writing.
+            I have some thoughts about rewriting all of this in rails, but the only dynamic website coding I've done has been in PHP, and I kinda like the simplicity of static HTML + CSS since it allows me to just do whatever without really needing to worry too much about implementation details or overengineering certain elements of the site.
+            I've also thought about adding some Javascript, but also I hate writing JS and this place is supposed to be for doing things I actually enjoy, so probably fuck that.
+            My only real thought is that static HTML seems a bit limiting, but I guess we'll see.
+        </td>
+    </tr>
+</table>
+</div>
+
+<div class=content>
+<table>
+    <tr>
+        <td class="title"><img style="max-height:24px;" src="rainbow-pawprint.gif">Setup</td>
+        <td class="date">12.04.2021</td>
+    </tr>
+    <tr>
+        <td colspan=2>
+            <hr>
+            A lot goes into getting a PC-98 to run in modern day, particularly outside of its native country. 
+            Now that I've gone through all the trouble of dealing with these hurdles, hopefully I can help you.
+            Most of the issues are compatibility related. Nothing about PC-98s are standard outside the world of PC-98s.
+            You need to convert power, video connectors, and video signals, not to mention you'll also need a compatible keyboard and mouse, because those too, are non-standard.
+            <br><br>
+            Before you can even plug the thing in, it's important to get a 120v-100v step-down transformer to power them.
+            It's unclear whether plugging it directly into 120v power would do any real damage, but the PC-98's power supply is not rated for the standard voltage for a US wall socket.
+            These things are fairly inexpensive and easy to find as well, I just ordered a simple $30 one off of Amazon.
+            <br><br>
+            Now that you can turn it on, the next issue is you can't just plug it into a monitor. While compatible monitors do exist, getting your hands on one isn't easy.
+            They're mostly old, Japanese CRTs, and as if finding one you're sure is compatible wasn't hard enough, you then have to get the thing shipped to you which will cost more than 
+            the entire rest of the project combined. After learning this, I decided I just wanted to be able to use a simple LCD monitor with the computers, 
+            since they're much easier to get your hands on and don't have a risk of blowing up with a bad signal, so I picked up a cheap, used HP monitor for about $40 off ebay. 
+            This is, of course, not compatible. The output signal of the PC-98 is 640x400 at 24 kHz, which essenitally nothing will recognize out of the box. The secret ingredient 
+            to making this work is an <a href=https://videogameperfection.com/products/open-source-scan-converter/>Open Source Scan Converter (OSSC)</a>. I looked into DIYing the signal conversion, 
+            but it requires an FPGA, as the video signal is way too fast for an ordinary microcontroller to handle. The OSSC is basically the cheapest way to get the job done, and it works great. 
+            I even hooked it up to my 55" TV in the living room, and the image was clear and sharp. Nothing short of delightful. It'll also work with any old CRT, too, so if you want to use one you just need to
+            get a little converter for HDMI to VGA.
+            <br><br>
+            There's still one tiny issue. The analog RGB connector on the PC-98 is a 2 row, 15-pin D connector, whereas VGA ports are 3 rows. The easy fix was to take a normal VGA cable, cut off one of the connectors, 
+            and solder a DB15 15-pin male solder cup connector in its place, which cost about $7. For wiring correctly, I used <a href=http://radioc.web.fc2.com/column/pc98bas/pc98dispout2_en.htm>this</a> as a reference.
+            <br><br>
+            After all of that, you just plug everything in, hook up a speaker, and futz with the OSSC until the image is centered on the monitor, then it's off to play some games!
+            Of course, my experience was not this simple and took a lot more time and research and a few failures, but this is what worked and I think it's probably the best current method.
+        </td>
+    </tr>
+</table>
+</div>
+
+<div class=content>
+<table>
+    <tr>
+        <td class="title"><img style="max-height:24px;" src="rainbow-pawprint.gif">Introduction: Importing!</td>
         <td class="date">08.16.2021</td>
     </tr>
     <tr>
@@ -53,44 +124,6 @@
             This resulted in an impressive dent on one corner of the case extreme enough to bend the entire back half into a zig zag.
             The DA is built like a tank though, and after bending it back into shape it's 100% functional, just slightly uglier (no one seems to notice, lol).
             Cosmetic damage or no, its charm and good looks was never a particular selling point for the DA. ;P
-        </td>
-    </tr>
-</table>
-</div>
-
-<div class=content>
-<table>
-    <tr>
-        <td class="title">Setup</td>
-        <td class="date">12.04.2021</td>
-    </tr>
-    <tr>
-        <td colspan=2>
-            <hr>
-            A lot goes into getting a PC-98 to run in modern day, particularly outside of its native country. 
-            Now that I've gone through all the trouble of dealing with these hurdles, hopefully I can help you.
-            Most of the issues are compatibility related. Nothing about PC-98s are standard outside the world of PC-98s.
-            You need to convert power, video connectors, and video signals, not to mention you'll also need a compatible keyboard and mouse, because those too, are non-standard.
-            <br><br>
-            Before you can even plug the thing in, it's important to get a 120v-100v step-down transformer to power them.
-            It's unclear whether plugging it directly into 120v power would do any real damage, but the PC-98's power supply is not rated for the standard voltage for a US wall socket.
-            These things are fairly inexpensive and easy to find as well, I just ordered a simple $30 one off of Amazon.
-            <br><br>
-            Now that you can turn it on, the next issue is you can't just plug it into a monitor. While compatible monitors do exist, getting your hands on one isn't easy.
-            They're mostly old, Japanese CRTs, and as if finding one you're sure is compatible wasn't hard enough, you then have to get the thing shipped to you which will cost more than 
-            the entire rest of the project combined. After learning this, I decided I just wanted to be able to use a simple LCD monitor with the computers, 
-            since they're much easier to get your hands on and don't have a risk of blowing up with a bad signal, so I picked up a cheap, used HP monitor for about $40 off ebay. 
-            This is, of course, not compatible. The output signal of the PC-98 is 640x400 at 24 kHz, which essenitally nothing will recognize out of the box. The secret ingredient 
-            to making this work is an <a href=https://videogameperfection.com/products/open-source-scan-converter/>Open Source Scan Converter (OSSC)</a>. I looked into DIYing the signal conversion, 
-            but it requires an FPGA, as the video signal is way too fast for an ordinary microcontroller to handle. The OSSC is basically the cheapest way to get the job done, and it works great. 
-            I even hooked it up to my 55" TV in the living room, and the image was clear and sharp. Nothing short of delightful. It'll also work with any old CRT, too, so if you want to use one you just need to
-            get a little converter for HDMI to VGA.
-            <br><br>
-            There's still one tiny issue. The analog RGB connector on the PC-98 is a 2 row, 15-pin D connector, whereas VGA ports are 3 rows. The easy fix was to take a normal VGA cable, cut off one of the connectors, 
-            and solder a DB15 15-pin male solder cup connector in its place, which cost about $7. For wiring correctly, I used <a href=http://radioc.web.fc2.com/column/pc98bas/pc98dispout2_en.htm>this</a> as a reference.
-            <br><br>
-            After all of that, you just plug everything in, hook up a speaker, and futz with the OSSC until the image is centered on the monitor, then it's off to play some games!
-            Of course, my experience was not this simple and took a lot more time and research and a few failures, but this is what worked and I think it's probably the best current method.
         </td>
     </tr>
 </table>

@@ -69,6 +69,10 @@ img
     font-weight: bold;
     color: #6717a6;
 }
+.content .title img
+{
+    max-height:24px;
+}
 
 .content .date
 {
@@ -85,7 +89,8 @@ img
 .content img
 {
     float: left;
-    max-width: 55%;
+    max-width: 45%;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
