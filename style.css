@@ -63,20 +63,30 @@ img
     color: #6717a6;
 }
 
-.content .title
+.content .post-header
 {
-    float: left;
-    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #6717a6;
 }
-.content .title img
+.content .post-header img
 {
-    max-height:24px;
+    text-align: left;
+    max-height: 24px;
+    margin-left: 0;
 }
 
-.content .date
+.content .post-header .title
+{
+    text-align: center;
+    font-weight: bold
+}
+
+.content .post-header .date
 {
     float: right;
+    font-weight: normal;
 }
 
 .content hr
